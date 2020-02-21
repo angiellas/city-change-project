@@ -23,45 +23,38 @@ class Search extends React.Component {
     const url = this.state.search.href;
     const slugIndex = url.lastIndexOf(":") + 1;
     const slug = url.substr(slugIndex).slice(0, -1);
-    console.log(slug);
   };
 
   componentDidMount() {
     fetch("https://api.teleport.org/api/urban_areas/")
       .then(response => response.json())
       .then(response => {
-        console.log(response);
-
         const cityNames = response._links["ua:item"];
 
         this.setState({ cityNames: cityNames });
-        console.log(cityNames);
       });
   }
 
   render() {
     return (
-      <React.Fragment>
-        <FormGroup>
-          <InputGroup>
-            <Typeahead
-              labelKey="name"
-              onChange={s => {
-                this.setState({ search: s[0] });
-                console.log(s);
-              }}
-              options={this.state.cityNames}
-              placeholder="Where would you like to go..."
-              id="search-city"
-            />
-            <InputGroup.Append>
-              <Button variant="outline-warning" onClick={this.onSearch}>
-                Search
-              </Button>
-            </InputGroup.Append>
-          </InputGroup>
-        </FormGroup>
-      </React.Fragment>
+      <FormGroup>
+        <InputGroup>
+          <Typeahead
+            labelKey="name"
+            onChange={s => {
+              this.setState({ search: s[0] });
+            }}
+            options={this.state.cityNames}
+            placeholder="Where would you like to go..."
+            id="search-city"
+          />
+          <InputGroup.Append>
+            <Button variant="outline-warning" onClick={this.onSearch}>
+              Search
+            </Button>
+          </InputGroup.Append>
+        </InputGroup>
+      </FormGroup>
     );
   }
 }
