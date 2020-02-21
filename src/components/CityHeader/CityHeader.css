@@ -1,0 +1,31 @@
+.CityHeader-logo {
+  width: 140px;
+  height: 82px;
+  pointer-events: none;
+}
+
+.CityHeader a {
+  color: rgb(255, 138, 0) !important;
+  font-size: 16px;
+  font-family: "Open Sans";
+}
+
+.CityHeader a.nav-link {
+  padding: 1px 2px 2px 24px !important;
+}
+
+.CityHeader a:hover {
+  text-decoration: none !important;
+  color: blue !important;
+}
+
+.CityHeader .navbar-toggler {
+  border: 5px solid blue !important;
+  border-radius: 0 !important;
+  padding: 4px 6px !important;
+  margin-bottom: 32px !important;
+}
+
+.CityHeader button:focus {
+  outline: none !important;
+}
