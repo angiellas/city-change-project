@@ -4,9 +4,9 @@ import "./CitySubTitle.css";
 
 function CitySubTitle({ citysubtitle }) {
   return (
-    <Row className="sub-heading">
+    <Row className="CitySubTitle">
       <div>
-        <h2 className="sub-heading-style ml-5 pl-2 mb-0 ml-lg-5 pl-lg-5 mb-lg-0">
+        <h2 className="city-sub-title-style ml-5 pl-2 mb-0 ml-lg-5 pl-lg-5 mb-lg-0">
           {citysubtitle}
         </h2>
       </div>
