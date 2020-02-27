@@ -1,0 +1,9 @@
+.CitySubTitle {
+}
+
+.CitySubTitle .city-sub-title-style {
+  font-size: 8vmin;
+  font-weight: bold;
+  width: 400px;
+  color: rgb(24, 0, 255);
+}
