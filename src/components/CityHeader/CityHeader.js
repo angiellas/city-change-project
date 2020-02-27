@@ -26,10 +26,7 @@ function CityHeader() {
             </NavLink>
           </Nav.Link>
           <Nav.Link>
-            <NavLink to="/preferences">Preferences</NavLink>
-          </Nav.Link>
-          <Nav.Link>
-            <NavLink to="/results">Results</NavLink>
+            <NavLink to="/map">Map</NavLink>
           </Nav.Link>
           <Nav.Link>
             <NavLink to="/city">City</NavLink>
