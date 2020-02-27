@@ -1,5 +1,4 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
 import CityHeader from "./components/CityHeader/CityHeader";
 import { Switch, Route } from "react-router-dom";
 
