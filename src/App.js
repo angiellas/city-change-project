@@ -9,8 +9,7 @@ function App() {
       <CityHeader />
       <Switch>
         <Route exact path="/" component={() => null} />
-        <Route path="/preferences" component={() => null} />
-        <Route path="/results" component={() => null} />
+        <Route path="/map" component={() => null} />
         <Route path="/city" component={() => null} />
       </Switch>
       <Footer />
