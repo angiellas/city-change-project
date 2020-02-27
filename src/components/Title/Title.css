@@ -1,0 +1,18 @@
+.Title {
+}
+
+.Title .title-style {
+  font-family: "Montserrat";
+  font-size: 15vmin;
+  font-weight: bold;
+  text-transform: capitalize;
+  padding: 10px 8px 17px 8px;
+  line-height: 0.8;
+}
+
+.Title .mini-title {
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 3vmin;
+  margin-bottom: 0 !important;
+}
