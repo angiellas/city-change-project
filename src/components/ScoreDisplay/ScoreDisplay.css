@@ -1,0 +1,13 @@
+.ScoreDisplay p {
+  font-weight: 50px;
+}
+
+.ScoreDisplay:hover {
+  cursor: pointer;
+  background-color: blue;
+  box-shadow: 5px 5px 5px #8597ff;
+}
+
+.ScoreDisplay h2:hover {
+  color: white;
+}

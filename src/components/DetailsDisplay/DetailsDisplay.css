@@ -1,0 +1,24 @@
+.DetailsDisplay {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-bottom: 2px rgb(255, 138, 0) solid;
+}
+
+.DetailsDisplay ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style-type: none;
+  color: rgb(255, 24, 0);
+  font-weight: bold;
+}
+
+.DetailsDisplay h1 {
+  color: rgb(24, 0, 255);
+}
+
+.DetailsDisplay .title {
+  color: rgb(152, 0, 255);
+}
