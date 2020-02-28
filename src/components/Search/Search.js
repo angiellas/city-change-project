@@ -3,8 +3,8 @@ import "react-bootstrap-typeahead/css/Typeahead.css";
 import "react-bootstrap-typeahead/css/Typeahead-bs4.css";
 import Button from "react-bootstrap/Button";
 import { Typeahead } from "react-bootstrap-typeahead";
-import FormGroup from "react-bootstrap/FormGroup";
 import InputGroup from "react-bootstrap/InputGroup";
+import { withRouter } from "react-router-dom";
 
 class Search extends React.Component {
   constructor(props) {
@@ -23,6 +23,8 @@ class Search extends React.Component {
     const url = this.state.search.href;
     const slugIndex = url.lastIndexOf(":") + 1;
     const slug = url.substr(slugIndex).slice(0, -1);
+
+    this.props.history.push(`/city/${slug}`);
   };
 
   componentDidMount() {
@@ -35,28 +37,36 @@ class Search extends React.Component {
       });
   }
 
+  handleKeyPress = event => {
+    if (event.keyCode === 13) {
+      this.onSearch();
+    }
+  };
+
+  handleChange = search => {
+    this.setState({ search: search[0] });
+  };
+
   render() {
     return (
-      <FormGroup>
-        <InputGroup>
-          <Typeahead
-            labelKey="name"
-            onChange={s => {
-              this.setState({ search: s[0] });
-            }}
-            options={this.state.cityNames}
-            placeholder="Where would you like to go..."
-            id="search-city"
-          />
-          <InputGroup.Append>
-            <Button variant="outline-warning" onClick={this.onSearch}>
-              Search
-            </Button>
-          </InputGroup.Append>
-        </InputGroup>
-      </FormGroup>
+      <InputGroup>
+        <Typeahead
+          labelKey="name"
+          onChange={this.handleChange}
+          onKeyDown={this.handleKeyPress}
+          options={this.state.cityNames}
+          placeholder="Where would you like to go..."
+          id="search-city"
+        />
+
+        <InputGroup.Append>
+          <Button variant="outline-warning" onClick={this.onSearch}>
+            Search
+          </Button>
+        </InputGroup.Append>
+      </InputGroup>
     );
   }
 }
 
-export default Search;
+export default withRouter(Search);
