@@ -3,3 +3,26 @@
   padding-bottom: 70px;
   color: rgb(24, 0, 255);
 }
+
+.CityDetails .cover-image {
+  height: 300px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-size: cover;
+}
+
+.CityDetails .cover-image::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.CityDetails .Title {
+  z-index: 1;
+}
