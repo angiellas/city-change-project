@@ -1,0 +1,132 @@
+.Home {
+  padding-top: 100px;
+}
+
+.Home.background-image {
+  background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.2) 30%,
+      rgba(255, 255, 255, 0.1) 64%
+    ),
+    url("../static/img/cityimage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+}
+
+.Home .box-container {
+  margin: 0 auto;
+  background-color: rgb(24, 0, 255);
+  color: white;
+  padding: 20px 10px 20px 10px;
+  width: 98%;
+}
+
+.Home .box-container-two {
+  margin: 0 auto;
+  margin-top: 60px;
+  background-color: rgb(255, 138, 0);
+  color: white;
+  padding: 20px 10px 30px 10px;
+  width: 98%;
+}
+
+.Home h2.box-title {
+  width: 300px;
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: orange;
+  margin-top: -54px;
+  line-height: 1.1;
+}
+
+.Home h2.box-title-two {
+  width: 340px;
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: rgb(24, 0, 255);
+  margin-top: -54px;
+  line-height: 1.1;
+}
+
+.Home .box-container p {
+  padding: 15px 15px 0px 15px;
+  line-height: 1.8;
+}
+
+.Home .box-container-two p {
+  padding: 15px 15px 0px 15px;
+  line-height: 1.8;
+}
+
+.Home .search-style {
+  padding: 5px 15px 0px 15px;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .Home {
+    padding-top: 50px;
+  }
+  .Home .box-container {
+    width: 90%;
+  }
+  .Home .box-container-two {
+    margin: 0 auto;
+    width: 90%;
+    margin-top: 60px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .Home {
+    padding-top: 120px;
+  }
+  .Home .box-container {
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 60%;
+  }
+  .Home .box-container-two {
+    margin: 0 auto;
+    margin-top: 60px;
+    width: 60%;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .Home {
+    margin-left: 300px;
+    padding-top: 120px;
+  }
+  .Home .box-container {
+    margin-left: -150px;
+    width: 80%;
+  }
+  .Home .box-container-two {
+    margin-left: -150px;
+    width: 80%;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .Home {
+    margin-left: 300px;
+    padding-top: 120px;
+  }
+  .Home .box-container {
+    margin-left: -200px;
+    width: 65%;
+  }
+
+  .Home .box-container-two {
+    margin-left: -200px;
+    margin-top: 64px;
+    width: 65%;
+  }
+}

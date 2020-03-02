@@ -1,18 +1,21 @@
 import React from "react";
-import "./Footer.css";
+import { Link } from "react-router-dom";
 import logo from "../../static/img/logo.png";
+import "./Footer.css";
 
-const Footer = () => {
+function Footer() {
   return (
     <div className="Footer">
-      <img src={logo} alt="logo" />
-      <p>Copyright © 2020</p>
-      <p>
-        Contact us:{" "}
-        <a href="mailto:contact@citychange.com">contact@citychange.com</a>
-      </p>
+      <Link to="/">
+        <img src={logo} alt="logo" />
+        <p>Copyright © 2020</p>
+      </Link>
+
+      <div className="email-style">
+        <a href="mailto:contact@citychange.com">Click To Contact!</a>
+      </div>
     </div>
   );
-};
+}
 
 export default Footer;

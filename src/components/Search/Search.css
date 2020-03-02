@@ -1,0 +1,27 @@
+.Search .btn {
+  color: white !important;
+  background-color: rgb(24, 0, 255) !important;
+  border-radius: 0px !important;
+  border-color: none !important;
+  font-family: "Open Sans";
+  font-weight: bold;
+}
+
+.Search .btn:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.Search .btn:hover {
+  background-color: rgb(152, 0, 255) !important;
+}
+
+.Search .btn:active {
+  border-color: none !important;
+}
+
+.Search .form-control:focus {
+  border-color: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
