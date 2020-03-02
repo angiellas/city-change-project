@@ -5,6 +5,7 @@ import Button from "react-bootstrap/Button";
 import { Typeahead } from "react-bootstrap-typeahead";
 import InputGroup from "react-bootstrap/InputGroup";
 import { withRouter } from "react-router-dom";
+import "./Search.css";
 
 class Search extends React.Component {
   constructor(props) {
@@ -49,7 +50,7 @@ class Search extends React.Component {
 
   render() {
     return (
-      <InputGroup>
+      <InputGroup className="Search">
         <Typeahead
           labelKey="name"
           onChange={this.handleChange}
@@ -60,7 +61,7 @@ class Search extends React.Component {
         />
 
         <InputGroup.Append>
-          <Button variant="outline-warning" onClick={this.onSearch}>
+          <Button className="button-style" onClick={this.onSearch}>
             Search
           </Button>
         </InputGroup.Append>
