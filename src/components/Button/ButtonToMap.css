@@ -1,0 +1,22 @@
+.ButtonToMap {
+  display: flex;
+  justify-content: center;
+}
+
+.ButtonToMap .buttonStyle {
+  margin: 25px;
+  background-color: rgb(255, 0, 231);
+  color: white;
+  border: solid 5px rgb(255, 0, 231);
+  border-radius: 5px;
+  font-weight: bold;
+  border-style: solid;
+  padding: 20px;
+}
+
+.ButtonToMap .buttonStyle:hover {
+  color: white;
+  background-color: rgb(152, 0, 255);
+  border: solid 5px rgb(152, 0, 255);
+  box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.24), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}

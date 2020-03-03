@@ -2,6 +2,7 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import ScoreDetails from "../ScoreDetails/ScoreDetails";
 import CityTitle from "../Title/CityTitle";
+import ButtonToMap from "../Button/ButtonToMap";
 import "./CityDetails.css";
 
 class CityDetails extends React.Component {
@@ -31,7 +32,9 @@ class CityDetails extends React.Component {
     fetch(`https://api.teleport.org/api/urban_areas/slug:${cityName}/`)
       .then(response => response.json())
       .then(response => {
-        this.setState({ name: response.name });
+        this.setState({
+          name: response.name
+        });
       });
 
     fetch(`https://api.teleport.org/api/urban_areas/slug:${cityName}/images`)
@@ -49,7 +52,6 @@ class CityDetails extends React.Component {
             score: category.score_out_of_10
           };
         });
-
         this.setState({ categories });
       });
 
@@ -79,11 +81,14 @@ class CityDetails extends React.Component {
         >
           <CityTitle city={this.state.name} />
         </div>
-
         {this.state.categories.map(category => {
           const details = this.state.details.find(
             element => element.label === category.name
           );
+
+          if (!details) {
+            return null;
+          }
 
           return (
             <ScoreDetails
@@ -93,6 +98,7 @@ class CityDetails extends React.Component {
             />
           );
         })}
+        <ButtonToMap name={this.props.match.params.cityName} />
       </Container>
     );
   }
