@@ -21,15 +21,10 @@ class DetailsDisplay extends React.Component {
   };
 
   render() {
-    const { label, data } = this.props;
+    const { data } = this.props;
 
     return (
       <Row className={"DetailsDisplay"}>
-        {/*
-        NOTE: waiting to pull Title component to use here
-        <Col>
-          <h1>{label}</h1>
-        </Col> */}
         <Col>
           <ul>
             {data.map(breakDown => (

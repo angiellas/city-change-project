@@ -23,6 +23,7 @@ function ScoreDisplay({ name, score }) {
       </Col>
       <Col>
         <ProgressBar
+          className="label"
           variant={variant}
           now={score * 10}
           label={`${Number(score * 10).toFixed(0)}%`}

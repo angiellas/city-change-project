@@ -11,3 +11,9 @@
 .ScoreDisplay h2:hover {
   color: white;
 }
+
+@media screen and (max-width: 600px) {
+  .ScoreDisplay .label {
+    font-size: 8px;
+  }
+}
