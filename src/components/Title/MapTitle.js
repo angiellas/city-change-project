@@ -1,13 +1,14 @@
 import React from "react";
 import Title from "./Title";
 
-function MapTitle(props) {
+function MapTitle({ city }) {
   return (
     <Title
       headline="Welcome to"
-      subtitle="CityMap"
+      subtitle={`${city}Map`}
       color="white"
       backgroundColor="rgb(152, 0, 255)"
+      margin=""
     />
   );
 }
