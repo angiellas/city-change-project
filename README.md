@@ -1,6 +1,8 @@
 ## Team Members :
 [Angeline R.](https://github.com/angiellas)
+
 [Mollie Ball.](https://github.com/mollieball)
+
 [Andrea de Roeck.](https://github.com/dreaderoeck)
 
 This website was created using React App, Teleport and Bing APIs.
