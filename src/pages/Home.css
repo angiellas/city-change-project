@@ -65,18 +65,42 @@
   padding: 5px 15px 0px 15px;
 }
 
+.row-carousel {
+  display: flex;
+  background-color: rgb(231, 231, 231);
+  margin-bottom: 100px;
+  margin-left: -40px;
+  margin-top: 130px;
+}
+
+.row-carousel.right {
+  justify-content: flex-end;
+  padding: 0px !important;
+}
+
+.column-carousel {
+  padding: 0;
+}
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   .Home {
     padding-top: 50px;
   }
+
   .Home .box-container {
     width: 90%;
   }
+
   .Home .box-container-two {
     margin: 0 auto;
     width: 90%;
     margin-top: 60px;
+  }
+
+  .row-carousel {
+    width: 100%;
+    margin-left: 0px;
   }
 }
 
@@ -85,15 +109,22 @@
   .Home {
     padding-top: 120px;
   }
+
   .Home .box-container {
     margin: 0 auto;
     margin-top: 30px;
     width: 60%;
   }
+
   .Home .box-container-two {
     margin: 0 auto;
     margin-top: 60px;
     width: 60%;
+  }
+
+  .row-carousel {
+    width: 100%;
+    margin-left: 0px;
   }
 }
 
@@ -103,13 +134,19 @@
     margin-left: 300px;
     padding-top: 120px;
   }
+
   .Home .box-container {
     margin-left: -150px;
     width: 80%;
   }
+
   .Home .box-container-two {
     margin-left: -150px;
     width: 80%;
+  }
+
+  .row-carousel {
+    width: 100%;
   }
 }
 
@@ -119,6 +156,7 @@
     margin-left: 300px;
     padding-top: 120px;
   }
+
   .Home .box-container {
     margin-left: -200px;
     width: 65%;

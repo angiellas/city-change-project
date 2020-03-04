@@ -12,7 +12,7 @@ function Footer() {
       </Link>
 
       <div className="email-style">
-        <a href="mailto:contact@citychange.com">Click To Contact!</a>
+        <a href="mailto:contact@citychange.com">Click to contact us</a>
       </div>
     </div>
   );
