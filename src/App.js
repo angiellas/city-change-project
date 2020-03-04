@@ -8,6 +8,7 @@ import CityDetails from "./components/CityDetails/CityDetails";
 import Footer from "./components/Footer/Footer";
 import Home from "./pages/Home";
 import Map from "./pages/Map";
+import About from "./pages/About";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
               <Route exact path="/" component={Home} />
               <Route path="/map/:cityName" component={Map} />
               <Route path="/city/:cityName" component={CityDetails} />
+              <Route path="/about" component={About} />
             </Switch>
           </Col>
         </Row>
