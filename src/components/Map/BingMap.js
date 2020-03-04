@@ -26,27 +26,33 @@ export default function BingMap({
   useEffect(() => {
     const scriptTag = document.createElement("script");
 
+    function updateMap() {
+      bingMap.current = new window.Microsoft.Maps.Map(`#${id}`, {
+        credentials,
+        center: new window.Microsoft.Maps.Location(center.lat, center.lng),
+        customMapStyle,
+        disableBirdseye,
+        disableMapTypeSelectorMouseOver,
+        disableStreetside,
+        disableStreetsideAutoCoverage,
+        enableClickableLogo,
+        showDashboard,
+        showMapTypeSelector,
+        showScalebar,
+        showTermsLink
+      });
+    }
+
     if (document.querySelector(`script[src="${bingMapsScriptSrc}"]`) === null) {
       scriptTag.src = bingMapsScriptSrc;
 
       window.bingmapsCallback = () => {
-        bingMap.current = new window.Microsoft.Maps.Map(`#${id}`, {
-          credentials,
-          center: new window.Microsoft.Maps.Location(center.lat, center.lng),
-          customMapStyle,
-          disableBirdseye,
-          disableMapTypeSelectorMouseOver,
-          disableStreetside,
-          disableStreetsideAutoCoverage,
-          enableClickableLogo,
-          showDashboard,
-          showMapTypeSelector,
-          showScalebar,
-          showTermsLink
-        });
+        updateMap();
       };
 
       document.head.appendChild(scriptTag);
+    } else {
+      updateMap();
     }
   }, []);
 
