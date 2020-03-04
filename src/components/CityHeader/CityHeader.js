@@ -25,12 +25,6 @@ function CityHeader() {
               Home
             </NavLink>
           </Nav.Link>
-          <Nav.Link>
-            <NavLink to="/map">Map</NavLink>
-          </Nav.Link>
-          <Nav.Link>
-            <NavLink to="/city">City</NavLink>
-          </Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
