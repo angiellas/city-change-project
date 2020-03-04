@@ -1,0 +1,68 @@
+.CitiesWithTitle {
+  margin-top: -60px;
+  margin-bottom: 0 !important;
+}
+
+.CitiesWithTitle.right {
+  text-align: right;
+  margin-right: 15px;
+}
+
+.CitiesWithTitle.left {
+  text-align: left;
+  padding-left: 20px;
+  margin-left: 15px;
+}
+
+.CitiesWithTitle.left .mini-title,
+.CitiesWithTitle .title-style {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .CitiesWithTitle {
+    width: 70%;
+    margin-top: -40px;
+  }
+
+  .CitiesWithTitle.left {
+    margin-left: 30px;
+  }
+  .CitiesWithTitle.right {
+    margin-right: 30px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .CitiesWithTitle {
+    width: 70%;
+    margin-top: -40px;
+  }
+
+  .CitiesWithTitle.left {
+    margin-left: 30px;
+  }
+
+  .CitiesWithTitle.right {
+    margin-right: 30px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .CitiesWithTitle {
+    width: 70%;
+    margin-top: -40px;
+  }
+
+  .CitiesWithTitle.left {
+    margin-left: 0px;
+  }
+
+  .CitiesWithTitle.right {
+    margin-right: 30px;
+  }
+}

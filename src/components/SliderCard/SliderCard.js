@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import ProgressBar from "react-bootstrap/ProgressBar";
@@ -56,7 +57,9 @@ class SliderCard extends React.Component {
             />
           </Card.Text>
           <div className="d-flex justify-content-center">
-            <Button variant="secondary">Visit city</Button>
+            <Link to={`/city/${this.props.city}`}>
+              <Button variant="secondary">Visit city</Button>
+            </Link>
           </div>
         </Card.Body>
       </Card>
