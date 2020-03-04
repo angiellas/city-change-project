@@ -1,3 +1,10 @@
+## Team Members :
+[Angeline R.](https://github.com/angiellas)
+[Mollie Ball.](https://github.com/mollieball)
+[Andrea de Roeck.](https://github.com/dreaderoeck)
+
+This website was created using React App, Teleport and Bing APIs.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
