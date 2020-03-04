@@ -7,6 +7,7 @@ import { Switch, Route } from "react-router-dom";
 import CityDetails from "./components/CityDetails/CityDetails";
 import Footer from "./components/Footer/Footer";
 import Home from "./pages/Home";
+import Map from "./pages/Map";
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
           <Col sm={12} md={12} lg={10} className="mt-3 pl-0 pr-0">
             <Switch>
               <Route exact path="/" component={Home} />
-              <Route path="/map" component={() => null} />
+              <Route path="/map/:cityName" component={Map} />
               <Route path="/city/:cityName" component={CityDetails} />
             </Switch>
           </Col>
