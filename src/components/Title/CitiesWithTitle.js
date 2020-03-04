@@ -8,7 +8,7 @@ function CitiesWithTitle({ orientation = "left", children }) {
       className={`CitiesWithTitle ${orientation}`}
       headline="Cities with"
       subtitle={children}
-      fontSize="50px"
+      subtitleFontSize="50px"
       color="rgb(255, 0, 104)"
       backgroundColor="none"
     />

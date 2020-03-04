@@ -6,7 +6,7 @@ function Title({
   subtitle,
   backgroundColor = "transparent",
   color = "inherit",
-  fontSize = "",
+  subtitleFontSize = "",
   className = ""
 }) {
   return (
@@ -20,7 +20,7 @@ function Title({
         </h5>
         <h1
           className="title-style pt-0 mr-0 ml-0"
-          style={{ backgroundColor, color, fontSize }}
+          style={{ backgroundColor, color, subtitleFontSize }}
         >
           {subtitle}
         </h1>
